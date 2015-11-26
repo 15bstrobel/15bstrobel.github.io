@@ -12,72 +12,103 @@
 
 
 
-
+/* When the screen is normal size on a computer. */
 @media screen and (min-width: 980px) {
 
-.nav {
-	padding : .7em .25em .7em .2em;
-	margin-left : 1em;
-	background : #cccccc;
-	width : 13.3em; 
-	float : left; 
+	.nav {
+		padding : .7em .25em .7em .2em;
+		margin-left : 1em;
+		background : #cccccc;
+		width : 13.3em; 
+		float : left; 
 	
-}
+	}
 
-.body-wrap {
-	background : #cccccc;
-	margin : 0em 0em 0em 2em;
-	width : 43em;
-	position : absolute; 
-	left : 14.8em;
-}
+	.body-wrap {
+		background : #cccccc;
+		margin : 0em 0em 0em 2em;
+		width : 43em;
+		position : absolute; 
+		left : 14.8em;
+	}
 	
-.blog-date {
-	font-weight : bold;
-	display : inline;
-	margin-left: 1em;
-	margin-bottom: 1em;
-}
+	.blog-date {
+		font-weight : bold;
+		display : inline;
+		margin-left: 1em;
+		margin-bottom: 1em;
+	}
 
-.heading {
-	margin : 1em 1em -.5em 1em;
-	text-align : center;
-	background : #990000;
-}
+	.heading {
+		margin : 1em 1em -.5em 1em;
+		text-align : center;
+		background : #990000;
+	}
 
 
 } @media screen and (max-width: 979px) {
 
-.nav {
-	padding : .7em .25em .7em .2em;
-	width : 25em;
-	margin : auto;
-	background : #cccccc;
-}
+	/* When a screen is small size and mobile */
+	@media screen and (max-device-width: 600px) {
+		.nav {
+			padding : .7em .25em .7em .2em;
+			width : 90%;
+			margin : auto;
+			background : #cccccc;
+		}
 
-.body-wrap {
-	background : #cccccc;
-	width : 25em;
-	margin : auto;
-	margin-top : 1.25em;
-	margin-bottom : 2.25em;
-}
+		.body-wrap {
+			background : #cccccc;
+			width : 90%;
+			margin : auto;
+			margin-top : 1.25em;
+			margin-bottom : 2.25em;
+		}
 
-.blog-date {
-	font-weight : bold;
-	margin-bottom: 1em;
-}
+		.blog-date {
+			font-weight : bold;
+			margin-bottom: 1em;
+		}
 
-.heading {
-	width : 25em;
-	margin : auto;
-	margin-top : 1em;
-	margin-bottom : -.5em;
-	text-align : center;
-	background : #009900;
-}
+		.heading {
+			width : 90%;
+			margin : auto;
+			margin-top : 1em;
+			margin-bottom : -.5em;
+			text-align : center;
+			background : #000099;
+		}
+		
+	/* When a screen is small and on a computer */
+	} @media screen and (min-device-width: 600px) {
+		.nav {
+			padding : .7em .25em .7em .2em;
+			width : 25em;
+			margin : auto;
+			background : #cccccc;
+		}
 
+		.body-wrap {
+			background : #cccccc;
+			width : 25em;
+			margin : auto;
+			margin-top : 1.25em;
+			margin-bottom : 2.25em;
+		}
 
+		.blog-date {
+			font-weight : bold;
+			margin-bottom: 1em;
+		}
+
+		.heading {
+			width : 25em;
+			margin : auto;
+			margin-top : 1em;
+			margin-bottom : -.5em;
+			text-align : center;
+			background : #009900;
+		}
 }
 
 
