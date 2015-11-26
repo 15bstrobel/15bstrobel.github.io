@@ -91,6 +91,7 @@ ul li {
 	@media screen and (max-device-width: 600px) {
 		.nav {
 			width : 90%;
+			padding : .7em 0em .7em 0em;
 			margin : auto;
 			background : #cccccc;
 		}
