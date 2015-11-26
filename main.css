@@ -26,6 +26,7 @@
 .blog-entry {
 	text-align : left;
 	padding : .7em .7em .7em .7em;
+	margin-bottom : .5em;
 }
 
 
@@ -150,8 +151,16 @@ ul li {
 			background : #009900;
 		}
 }
+}
 
-
+.page-title {
+	text-align : left;
+	margin-left : .3em;
+	padding-top : .4em;
+	font-weight : bold;
+	font-size : 2em;
+}
+	
 
 
 
