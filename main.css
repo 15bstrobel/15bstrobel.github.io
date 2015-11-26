@@ -1,0 +1,38 @@
+.nav {
+	font-family: baskerville;
+	color : blue;
+
+}
+
+#header-text {
+	margin : 10px;
+	padding: 10px;
+	background : #cccccc;
+}
+
+
+.container-fluid * {
+	text-align : center;
+}
+
+.pull-left {
+	margin-top : 30px;
+	margin-left : 10px;
+	background : #cccccc;
+}
+
+ul {
+	margin-top: 10px;
+	margin-left: -10px;
+	margin-right: 10px;
+}
+
+ul ul {
+	margin-top: 0px;
+  	margin-left:-30px;
+  	margin-rightL 10px;
+}
+
+ul li {
+	margin-top: 7px;
+}
