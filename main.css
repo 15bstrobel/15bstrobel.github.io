@@ -1,39 +1,60 @@
-.nav {
-	font-family: baskerville;
-	color : blue;
-
+* {
+	font-family : baskerville;
+	
 }
 
-#header-text {
-	margin : .8em;
-	padding: .8em;
-	background : #cccccc;
-	font-size : 1em;
-}
-
-
-.container-fluid * {
+.heading {
+	margin : 1em 1em 0em 1em;
 	text-align : center;
+	background : #cccccc;
 }
 
-.pull-left {
-	margin-top : 2.5em;
-	margin-left : .8em;
+.heading h1 {
+	padding : 1em;
+}
+
+.nav {
+	padding : .7em .25em .7em .2em;
+	margin : 1em;
 	background : #cccccc;
+	width : 15.7em; 
+	float : left; 
+	
 }
 
 ul {
-	margin-top: .8em;
+	margin-top: .6em;
 	margin-left: -.8em;
-	margin-right: .8em;
 }
 
 ul ul {
 	margin-top: 0px;
-  	margin-left: -2.5em;
-  	margin-right: .8em;
+  	margin-left: -2em;
 }
 
 ul li {
-	margin-top: .58em;
+	margin-top: .8em;
+}
+
+.body-wrap {
+	background : #cccccc;
+	float : right;
+	margin : 1em;
+	left : 17.7em;
+	width : 43em;
+	position : absolute;
+}
+
+.blog-entry th {
+	text-align : left;
+}
+
+.blog-date {
+	font-weight : bold;
+	display : inline;
+}
+
+.blog-title {
+	font-weight : bold;
+	display : inline;
 }
