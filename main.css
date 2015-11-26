@@ -5,8 +5,8 @@
 }
 
 #header-text {
-	margin : 10px;
-	padding: 10px;
+	margin : .8em;
+	padding: .8em;
 	background : #cccccc;
 	font-size : 1em;
 }
@@ -17,23 +17,23 @@
 }
 
 .pull-left {
-	margin-top : 30px;
-	margin-left : 10px;
+	margin-top : 2.5em;
+	margin-left : .8em;
 	background : #cccccc;
 }
 
 ul {
-	margin-top: 10px;
-	margin-left: -10px;
-	margin-right: 10px;
+	margin-top: .8em;
+	margin-left: -.8em;
+	margin-right: .8em;
 }
 
 ul ul {
 	margin-top: 0px;
-  	margin-left:-30px;
-  	margin-rightL 10px;
+  	margin-left: -2.5em;
+  	margin-right: .8em;
 }
 
 ul li {
-	margin-top: 7px;
+	margin-top: .58em;
 }
