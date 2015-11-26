@@ -14,14 +14,44 @@
 	font-size : 2.5em;
 }
 
+@media screen and (min-width: 980px) {
+
 .nav {
 	padding : .7em .25em .7em .2em;
-	margin : 0em .5em 1em 1em;
+	margin-left : 1em;
 	background : #cccccc;
-	width : 15.7em; 
+	width : 13.3em; 
 	float : left; 
 	
 }
+
+.body-wrap {
+	background : #cccccc;
+	margin : 0em 0em 0em 2em;
+	width : 43em;
+	position : absolute; 
+	left : 14.8em;
+}
+
+} @media screen and (max-width: 979px) {
+
+.nav {
+	padding : .7em .25em .7em .2em;
+	margin: auto;
+	background : #cccccc;
+	width : 90%; 
+}
+
+.body-wrap {
+	background : #cccccc;
+	margin : auto;
+	margin-top : 2em;
+	width : 90%;
+}
+
+}
+
+
 
 ul {
 	margin-top: .6em;
@@ -37,13 +67,7 @@ ul li {
 	margin-top: .8em;
 }
 
-.body-wrap {
-	background : #cccccc;
-	float : left;
-	margin : 0em 1em 0em 1em;
-	width : 43em;
-/*	position : absolute; and set left to a value and give exact width. */
-}
+
 
 .blog-entry {
 	text-align : left;
