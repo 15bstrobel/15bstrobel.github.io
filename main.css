@@ -10,12 +10,13 @@
 }
 
 .heading h1 {
-	padding : 1em;
+	padding : .6em;
+	font-size : 2.5em;
 }
 
 .nav {
 	padding : .7em .25em .7em .2em;
-	margin : 1em;
+	margin : 0em .5em 1em 1em;
 	background : #cccccc;
 	width : 15.7em; 
 	float : left; 
@@ -38,23 +39,31 @@ ul li {
 
 .body-wrap {
 	background : #cccccc;
-	float : right;
-	margin : 1em;
-	left : 17.7em;
+	float : left;
+	margin : 0em 0em 0em 1em;
 	width : 43em;
-	position : absolute;
+/*	position : absolute; and set left to a value and give exact width. */
 }
 
-.blog-entry th {
+.blog-entry {
 	text-align : left;
+	padding : .7em .7em .7em .7em;
 }
 
 .blog-date {
 	font-weight : bold;
 	display : inline;
+	margin-bottom : 1em;
 }
 
 .blog-title {
 	font-weight : bold;
 	display : inline;
+	margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+.blog-body {
+	margin-top : .6em;
+	
 }
