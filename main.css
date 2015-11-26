@@ -90,7 +90,6 @@ ul li {
 	/* When a screen is small size and mobile */
 	@media screen and (max-device-width: 600px) {
 		.nav {
-			padding : .7em 0em .7em 0em;
 			width : 90%;
 			margin : auto;
 			background : #cccccc;
