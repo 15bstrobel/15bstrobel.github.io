@@ -7,6 +7,72 @@
 		<meta charset="utf-8"> 
 		<title> FBLA Antivirus </title>
 		<link rel="stylesheet" href="main.css">
+		
+		
+		
+		<!--For Unity-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 604, 
+				height: 453,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "Gitpages WebBuild.unity3d");
+			});
+		-->
+		</script>
+
+		
+		
+		
 	</head>
 	<body>
 	
@@ -37,35 +103,25 @@
 		<div class="body-wrap">
 				<div class="page-title">FBLA Antivirus</div><hr>
 				
-				<!--Blog Entry-->
 				<div class="blog-entry">
-					<div class="blog-title">
-						The Website Is Made (Sort of)!
-					</div>
-					<div class="blog-date">
-						11/26/15 3:13 PM
-					</div>
 					<div class="blog-body">
-						Thanksgiving break gave me the edge I needed to finally overcome my homework
-						deficit and get started on this website! Yesterday I built the layout of
-						the website from scratch using HTML and CSS. I deliberated over how my website
-						would look on a mobile device (try it out!). That took a lot of work, because
-						this is my first time working with CSS and I don't quite understand some
-						of its features. I had to mess around with margins and padding a lot to get the
-						look I was going for. Even then, it's still just a grey background with a simple
-						color scheme.<br><br>
-						
-						Even ignoring the simplistic design, this website is far from complete,
-						if only because it <em>consists of a single page</em>. Today I will be working
-						on adding a blog page (this page!), and the pages for each of my games. Since today
-						is Thanksgiving, I may not get the opportunity to do this until nighttime, once 
-						dinner is over.<br><br>
-						
-						I think in my next entry I will establish some goals for this website and the blog,
-						and give an overview of my current plan and direction in game development.
-						
+						FBLA Antivirus is a game I created for FBLA's computer game and simulation programming event 
+						during my senior year of high school. It won 2nd place on the national level. <br><br><br>
+						<div class="content" >
+							<div id="unityPlayer">
+								<div class="missing">
+									<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+										<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+									</a>
+								</div>
+								<div class="broken">
+								<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+								<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+							</a>
+							</div>
+						</div>
 					</div>
-				</div>
+					<br>
 		</div>
 	</body>
 <html>

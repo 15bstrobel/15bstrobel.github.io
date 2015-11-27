@@ -13,15 +13,16 @@ body {
 
 
 .blog-title {
-	font-size : 1.2em;
+	font-size : 2em;
 	font-weight : bold;
 	font-family : Vollkorn, verdana;
 	display : inline;
-	margin-bottom : 1em;
+	margin-bottom : .4em;
 }
 
 .blog-body {
-	margin-top : .6em;
+	margin-top : .4em;
+	margin-bottom : .5em;
 	font-size : 1.1em;
 }
 
@@ -31,6 +32,13 @@ body {
 	padding : .7em .7em .7em .7em;
 	margin-bottom : .5em;
 }
+
+.blog-date {
+			font-weight : bold;
+			font-size : 1.2em;
+			margin-bottom: .4em;
+			font-family : Vollkorn, verdana;
+		}
 
 
 
@@ -75,15 +83,6 @@ ul li {
 		border-radius : 1em;
 		font-family : Vollkorn, verdana;
 	}
-	
-	.blog-date {
-		font-weight : bold;
-		font-size : 1.2em;
-		display : inline;
-		margin-left: 1em;
-		margin-bottom: .7em;
-		font-family : Vollkorn, verdana;
-	}
 
 	.heading {
 		margin : 1em 1em -.5em 1em;
@@ -113,13 +112,6 @@ ul li {
 			margin-top : 1.25em;
 			margin-bottom : 2.25em;
 			border-radius : 1em;
-			font-family : Vollkorn, verdana;
-		}
-
-		.blog-date {
-			font-weight : bold;
-			font-size : 1.2em;
-			margin-bottom: .7em;
 			font-family : Vollkorn, verdana;
 		}
 
@@ -155,12 +147,7 @@ ul li {
 			font-family : Vollkorn, verdana;
 		}
 
-		.blog-date {
-			font-weight : bold;
-			font-size : 1.2em;
-			margin-bottom: .7em;
-			font-family : Vollkorn, verdana;
-		}
+		
 
 		.heading {
 			width : 30em;
