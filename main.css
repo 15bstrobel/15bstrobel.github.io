@@ -1,6 +1,6 @@
-* {
-	font-family : baskerville;
-	
+
+body {
+	background-color : #dddddd;
 }
 
 
@@ -8,18 +8,21 @@
 .heading h1 {
 	padding : .6em;
 	font-size : 2.5em;
+	font-family : Alvo, baskerville;	
 }
 
 
 .blog-title {
+	font-size : 1.2em;
 	font-weight : bold;
+	font-family : Vollkorn, verdana;
 	display : inline;
 	margin-bottom : 1em;
 }
 
 .blog-body {
 	margin-top : .6em;
-	
+	font-size : 1.1em;
 }
 
 
@@ -49,40 +52,44 @@ ul li {
 
 
 
-
-
-
 /* When the screen is normal size on a computer. */
 @media screen and (min-width: 900px) {
 
 	.nav {
 		padding : .7em .6em .7em 0em;
 		margin-left : 1em;
-		background : #cccccc;
-		width : 13.3em; 
+		background : #ffffff;
+		width : 17.2em; 
 		float: left;
+		border-radius : 1em;
+		font-family : Arvo, baskerville;
 	
 	}
 
 	.body-wrap {
-		background : #cccccc;
+		background : #ffffff;
 		margin : 0em 0em 0em 2em;
 		width : 43em;
 		position : absolute; 
-		left : 14.8em;
+		left : 18.7em;
+		border-radius : 1em;
+		font-family : Vollkorn, verdana;
 	}
 	
 	.blog-date {
 		font-weight : bold;
+		font-size : 1.2em;
 		display : inline;
 		margin-left: 1em;
 		margin-bottom: .7em;
+		font-family : Vollkorn, verdana;
 	}
 
 	.heading {
 		margin : 1em 1em -.5em 1em;
 		text-align : center;
-		background : #990000;
+		background : #6666bb;
+		border-radius : 1em;
 	}
 
 
@@ -94,20 +101,26 @@ ul li {
 			width : 90%;
 			padding : .7em 0em .7em 0em;
 			margin : auto;
-			background : #cccccc;
+			background : #ffffff;
+			border-radius : 1em;
+			font-family : Arvo, baskerville;
 		}
 
 		.body-wrap {
-			background : #cccccc;
+			background : #ffffff;
 			width : 90%;
 			margin : auto;
 			margin-top : 1.25em;
 			margin-bottom : 2.25em;
+			border-radius : 1em;
+			font-family : Vollkorn, verdana;
 		}
 
 		.blog-date {
 			font-weight : bold;
+			font-size : 1.2em;
 			margin-bottom: .7em;
+			font-family : Vollkorn, verdana;
 		}
 
 		.heading {
@@ -116,7 +129,8 @@ ul li {
 			margin-top : 1em;
 			margin-bottom : -.5em;
 			text-align : center;
-			background : #000099;
+			background : #6666bb;
+			border-radius : 1em;
 		}
 		
 	/* When a screen is small and on a computer */
@@ -126,20 +140,26 @@ ul li {
 			padding-bottom : .7em;
 			width : 30em;
 			margin : auto;
-			background : #cccccc;
+			background : #ffffff;
+			border-radius : 1em;
+			font-family : Arvo, baskerville;
 		}
 
 		.body-wrap {
-			background : #cccccc;
+			background : #ffffff;
 			width : 30em;
 			margin : auto;
 			margin-top : 1.25em;
 			margin-bottom : 2.25em;
+			border-radius : 1em;
+			font-family : Vollkorn, verdana;
 		}
 
 		.blog-date {
 			font-weight : bold;
+			font-size : 1.2em;
 			margin-bottom: .7em;
+			font-family : Vollkorn, verdana;
 		}
 
 		.heading {
@@ -148,18 +168,35 @@ ul li {
 			margin-top : 1em;
 			margin-bottom : -.5em;
 			text-align : center;
-			background : #009900;
+			background : #6666bb;
+			border-radius : 1em;
 		}
-}
+	}
 }
 
 .page-title {
-	text-align : left;
+	text-align : center;
 	margin-left : .3em;
 	padding-top : .4em;
 	font-weight : bold;
 	font-size : 2em;
 }
+
+a {
+	color : #6666bb;
+	font-weight : bold;
+	text-decoration : none;
+}
+
+a:hover {
+	color : #8888dd;
+	
+}
+
+.content * {
+	margin : auto;
+}
+
 	
 
 
