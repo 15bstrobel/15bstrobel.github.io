@@ -11,6 +11,17 @@ body {
 	font-family : Alvo, baskerville;	
 }
 
+.footer {
+	margin : 1em 1.7em 1em 1.7em;
+	padding : .6em;
+	text-align : center;
+	background : #6666bb;
+	border-radius : .8em;
+	font-family : Alvo, baskerville;
+	clear : both;
+}
+
+
 
 .blog-title {
 	font-size : 2em;
@@ -34,11 +45,11 @@ body {
 }
 
 .blog-date {
-			font-weight : bold;
-			font-size : 1.2em;
-			margin-bottom: .4em;
-			font-family : Vollkorn, verdana;
-		}
+	font-weight : bold;
+	font-size : 1.2em;
+	margin-bottom: .4em;
+	font-family : Vollkorn, verdana;
+}
 
 
 
@@ -61,7 +72,29 @@ ul li {
 
 
 /* When the screen is normal size on a computer. */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1040px) {
+
+
+	/* Bad style. The images themselves were not cropped properly so I cropped them via
+		CSS. These show up in .screenshot, .screenshot img ,and ditto in next conditional. */
+	.screenshot {
+		overflow : hidden;
+		display : block;
+		margin : auto;
+		width : 30em;
+		height : 22.8em;
+		border-radius : .6em;
+	}
+
+
+	.screenshot img {
+		display : block;
+		margin : auto;
+		width : 31em;
+		position : relative;
+		left : -.5em;
+		top : -.25em;
+	}
 
 	.nav {
 		padding : .7em .6em .7em 0em;
@@ -76,10 +109,10 @@ ul li {
 
 	.body-wrap {
 		background : #ffffff;
-		margin : 0em 0em 0em 2em;
+		margin : 0em 0em 1em 2em;
 		width : 43em;
-		position : absolute; 
 		left : 18.7em;
+		float : left;
 		border-radius : 1em;
 		font-family : Vollkorn, verdana;
 	}
@@ -90,14 +123,45 @@ ul li {
 		background : #6666bb;
 		border-radius : 1em;
 	}
+	
+	.footer {
+	margin : 1em 1.7em 1em 1.7em;
+	padding : .6em;
+	text-align : center;
+	background : #6666bb;
+	border-radius : .8em;
+	font-family : Alvo, baskerville;
+	clear : both;
+}
 
 
-} @media screen and (max-width: 899px) {
+} @media screen and (max-width: 1039px) {
+
+	.screenshot {
+		overflow : hidden;
+		display : block;
+		margin : auto;
+		width : 24em;
+		height : 18em;
+		border-radius : .6em;
+	}
+
+	.screenshot img {
+		display : block;
+		margin : auto;
+		width : 25em;
+		position : relative;
+		left : -.5em;
+		top : -.25em;
+	}
 
 	/* When a screen is small size and mobile */
 	@media screen and (max-device-width: 600px) {
+	
+		
+	
 		.nav {
-			width : 90%;
+			width : 95%;
 			padding : .7em 0em .7em 0em;
 			margin : auto;
 			background : #ffffff;
@@ -107,16 +171,16 @@ ul li {
 
 		.body-wrap {
 			background : #ffffff;
-			width : 90%;
+			width : 95%;
 			margin : auto;
 			margin-top : 1.25em;
-			margin-bottom : 2.25em;
+			margin-bottom : 1em;
 			border-radius : 1em;
 			font-family : Vollkorn, verdana;
 		}
 
 		.heading {
-			width : 90%;
+			width : 95%;
 			margin : auto;
 			margin-top : 1em;
 			margin-bottom : -.5em;
@@ -125,8 +189,21 @@ ul li {
 			border-radius : 1em;
 		}
 		
+		.footer {
+			width : 95%
+			margin : auto;
+			margin-top : 1em;
+			margin-bottom : 2.25em;
+			padding : .6em;
+			text-align : center;
+			background : #6666bb;
+			border-radius : .8em;
+			font-family : Alvo, baskerville;
+		}
+		
 	/* When a screen is small and on a computer */
 	} @media screen and (min-device-width: 600px) {
+
 		.nav {
 			padding-top : .7em;
 			padding-bottom : .7em;
@@ -142,7 +219,7 @@ ul li {
 			width : 30em;
 			margin : auto;
 			margin-top : 1.25em;
-			margin-bottom : 2.25em;
+			margin-bottom : 1em;
 			border-radius : 1em;
 			font-family : Vollkorn, verdana;
 		}
@@ -157,6 +234,18 @@ ul li {
 			text-align : center;
 			background : #6666bb;
 			border-radius : 1em;
+		}
+		
+		.footer {
+			width : 30em;
+			margin : auto;
+			margin-top : 1em;
+			margin-bottom : 2.25em;
+			padding : .6em 0em .6em 0em;
+			text-align : center;
+			background : #6666bb;
+			border-radius : .8em;
+			font-family : Alvo, baskerville;
 		}
 	}
 }
@@ -184,8 +273,22 @@ a:hover {
 	margin : auto;
 }
 
+.center {
+	text-align : center;
+}
+
+.grid-image {
+	overflow : hidden;
+	display : inline-block;
+	width : 12em;
+	border-radius : .4em;
+}
+
+
+.grid-image img {
+	display : block;
+	margin : auto;
+	width : 12em;
+
+}
 	
-
-
-
-

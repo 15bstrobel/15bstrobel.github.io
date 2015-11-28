@@ -24,8 +24,8 @@
 		<script type="text/javascript">
 		<!--
 			var config = {
-				width: 604, 
-				height: 453,
+				width: 640, 
+				height: 480,
 				params: { enableDebugging:"0" }
 				
 			};
@@ -35,9 +35,16 @@
 
 				var $missingScreen = jQuery("#unityPlayer").find(".missing");
 				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
-				$missingScreen.hide();
+				var $smallScreen = jQuery("#unityPlayer").find(".small");
 				$brokenScreen.hide();
+				$missingScreen.hide();
+				$smallScreen.hide();
+				if ($(window).width() < 1040) {
+					$smallScreen.show();
+					return false;
+				}
 				
+
 				u.observeProgress(function (progress) {
 					switch(progress.pluginStatus) {
 						case "broken":
@@ -65,7 +72,7 @@
 						break;
 					}
 				});
-				u.initPlugin(jQuery("#unityPlayer")[0], "Gitpages WebBuild.unity3d");
+				u.initPlugin(jQuery("#unityPlayer")[0], "games/FBLA gitpages 2.unity3d");
 			});
 		-->
 		</script>
@@ -78,7 +85,7 @@
 	
 		<!--Title-->
 		<div class="heading">
-  			<h1>Indie Developer Extreme Wow</h1>
+  			<h1>Game Development by Brian</h1>
   		</div>
   		
 		<!--Navigation Bar-->
@@ -106,7 +113,8 @@
 				<div class="blog-entry">
 					<div class="blog-body">
 						FBLA Antivirus is a game I created for FBLA's computer game and simulation programming event 
-						during my senior year of high school. It won 2nd place on the national level. <br><br><br>
+						during my senior year of high school. It won 2nd place on the national level. Downloadable
+						versions are on the bottom of the page. <br><br><br>
 						<div class="content" >
 							<div id="unityPlayer">
 								<div class="missing">
@@ -115,13 +123,23 @@
 									</a>
 								</div>
 								<div class="broken">
-								<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
-								<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
-							</a>
+									<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+										<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+									</a>
+								</div>
+								<div class="smallScreen"> Your browser is too small. Resize and refresh. </div>
 							</div>
 						</div>
+						<br>
+						<br>
+						<a href="games/FBLA Antivirus.zip">Mac Build (right click and download)</a><br>
+						<a href="games/FBLA Antivirus Game.zip">Windows Build (right click and download)</a><br>
 					</div>
-					<br>
+				</div>
+				
+		</div>
+		<div class="footer">
+			Brian Strobel's Game Development Website - UW Class of 2019 - bstrobel@uw.edu
 		</div>
 	</body>
 <html>
