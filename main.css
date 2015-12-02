@@ -11,15 +11,6 @@ body {
 	font-family : Alvo, baskerville;	
 }
 
-.footer {
-	margin : 1em 1.7em 1em 1.7em;
-	padding : .6em;
-	text-align : center;
-	background : #6666bb;
-	border-radius : .8em;
-	font-family : Alvo, baskerville;
-	clear : both;
-}
 
 
 
@@ -125,40 +116,40 @@ ul li {
 	}
 	
 	.footer {
-	margin : 1em 1.7em 1em 1.7em;
-	padding : .6em;
-	text-align : center;
-	background : #6666bb;
-	border-radius : .8em;
-	font-family : Alvo, baskerville;
-	clear : both;
+		margin : 1em 1em 1em 1em;
+		padding : .6em;
+		text-align : center;
+		background : #6666bb;
+		border-radius : .8em;
+		font-family : Alvo, baskerville;
+		clear : both;
 }
 
 
 } @media screen and (max-width: 1039px) {
 
-	.screenshot {
-		overflow : hidden;
-		display : block;
-		margin : auto;
-		width : 24em;
-		height : 18em;
-		border-radius : .6em;
-	}
-
-	.screenshot img {
-		display : block;
-		margin : auto;
-		width : 25em;
-		position : relative;
-		left : -.5em;
-		top : -.25em;
-	}
+	
 
 	/* When a screen is small size and mobile */
 	@media screen and (max-device-width: 600px) {
 	
-		
+		.screenshot {
+			overflow : hidden;
+			display : block;
+			margin : auto;
+			width : 80%;
+			height : 60%;
+			border-radius : .6em;
+		}
+
+		.screenshot img {
+			display : block;
+			margin : auto;
+			width : 82%em;
+			position : relative;
+			left : -1%;
+			top : -.5%;
+		}
 	
 		.nav {
 			width : 95%;
@@ -203,6 +194,24 @@ ul li {
 		
 	/* When a screen is small and on a computer */
 	} @media screen and (min-device-width: 600px) {
+
+		.screenshot {
+			overflow : hidden;
+			display : block;
+			margin : auto;
+			width : 24em;
+			height : 18em;
+			border-radius : .6em;
+		}
+
+		.screenshot img {
+			display : block;
+			margin : auto;
+			width : 25em;
+			position : relative;
+			left : -.5em;
+			top : -.25em;
+		}
 
 		.nav {
 			padding-top : .7em;
