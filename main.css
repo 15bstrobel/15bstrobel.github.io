@@ -282,6 +282,14 @@ a:hover {
 	margin : auto;
 }
 
+#content {
+	width : 640;
+	height : 480;
+	margin : auto;
+	text-align : center;
+}
+
+
 .center {
 	text-align : center;
 }
