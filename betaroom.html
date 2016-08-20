@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
+	 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8"> 
+		<title> JS Beta Room </title>
+		<link rel="stylesheet" href="main.css">
+
+		<script type="text/javascript">
+    		window.onload = function() {
+	        	var game = new Phaser.Game(800, 600, Phaser.AUTO, "gamespace", { preload: preload, create: create, update: update });
+
+	        	function preload () {
+	            	game.load.image('logo', 'phaser.png');
+	        	}
+
+		        function create () {
+		            var logo = game.add.sprite(game.world.centerX, game.world.centerY, 'logo');
+		            logo.anchor.setTo(0.5, 0.5);
+		        }
+
+		        function update() {
+
+		        }
+    		};
+
+    	</script>
+		
+
+		
+	</head>
+	<body>
+	
+		<!--Title-->
+		<div class="heading">
+  			<h1>Game Development by Brian</h1>
+  		</div>
+  		
+		<!--Navigation Bar-->
+		<div class="nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="games.html">Games</a>
+					<ul>
+						<li><a href="supersmashpong.html">Super Smash Pong</a></li>
+						<li><a href="fblaantivirus.html">FBLA Antivirus</a></li>
+						<li><a href="washingtontechnologies.html">Washington Technologies</a></li>
+						<li><a href="theshadowmountain.html">The Shadow Mountain</a></li>
+						<li><a href="thegarden.html">The Garden</a></li>
+						<li><a href="pong.html">Pong</a></li>
+					</ul>
+				</li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</div>
+		
+		<!--Body-->
+		<div class="body-wrap">
+				<div class="page-title">JS Beta Room</div><hr>
+				
+				<div class="blog-entry">
+					<div class="blog-body">
+						This is the webpage on which I'm testing Phaser, an HTML 5 framework for games. I have a really neat idea in mind, but currenty I'm working on the groundwork of it!<br><br><br>
+						<div class="content" id="gamespace">
+							<!-- Phaser will load into this DOM object, hopefully. -->
+						</div>
+					</div>
+				</div>
+				
+		</div>
+		<div class="footer">
+			Brian Strobel's Game Development Website - UW Class of 2019 - bstrobel@uw.edu
+		</div>
+	</body>
+<html>
+	
+	
+	
+	
+	
+	
+	
