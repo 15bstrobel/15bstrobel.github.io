@@ -7,13 +7,13 @@
 		<meta charset="utf-8"> 
 		<title> JS Beta Room </title>
 		<link rel="stylesheet" href="main.css">
-
+		<script src="js/phaser.js"></script>
 		<script type="text/javascript">
     		window.onload = function() {
 	        	var game = new Phaser.Game(800, 600, Phaser.AUTO, "gamespace", { preload: preload, create: create, update: update });
 
 	        	function preload () {
-	            	game.load.image('logo', 'phaser.png');
+	            	game.load.image('logo', 'images/phaser.png');
 	        	}
 
 		        function create () {
